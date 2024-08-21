@@ -8,7 +8,7 @@ services:
       - 9001:9001
     environment:
       BPL_JVM_THREAD_COUNT: 50
-      SPRING_DATASOURCE_URL: "jdbc:postgresql://${services.polar-postgres.container_name}:5432/polardb_catalog"
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://polar-postgres:5432/polardb_catalog"
       SPRING_PROFILES_ACTIVE: "testdata"
 
   polar-postgres:
